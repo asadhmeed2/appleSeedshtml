@@ -1,6 +1,6 @@
 #card {
-  max-width: 30%;
-  max-height: 100%;
+  max-width: 20%;
+  max-height: 400em;
   margin: auto;
 
   background-color: rgb(207, 195, 127);
@@ -8,21 +8,19 @@
 #img {
   max-width: 100%;
 }
-#h1p {
-  text-align: left;
-  margin-bottom: 0;
-}
+
 .links {
   color: rgb(173, 179, 100);
   margin-left: 1em;
   margin-bottom: 2em;
 }
-#link-box {
-  margin-bottom: 1em;
-}
+
 #h2 {
   padding-left: 1em;
+  margin-bottom: 0;
 }
 #para {
   padding-left: 1.6em;
+  margin-top: 2px;
+  margin-bottom: 3px;
 }
