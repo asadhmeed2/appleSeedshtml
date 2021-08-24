@@ -1,0 +1,43 @@
+#parent {
+  padding: auto;
+  height: 70em;
+}
+#header {
+  margin: auto;
+  background-color: orange;
+  height: 20%;
+  text-align: center;
+  line-height: 150px;
+  border: solid 1px;
+}
+#side {
+  margin-top: 1.5%;
+  background-color: green;
+  float: left;
+  height: 80%;
+  width: 26%;
+  padding: 1%;
+}
+
+#main {
+  margin-top: 1.5%;
+  background-color: magenta;
+  float: right;
+  height: 80%;
+  width: 65%;
+  text-align: right;
+  padding: 1%;
+}
+.clr {
+  clear: both;
+}
+#footer {
+  line-height: 150px;
+  margin-top: 1.5%;
+  height: 19%;
+  background-color: rgb(61, 61, 206);
+  text-align: center;
+}
+/* .center {
+  margin: 2em;
+} */
