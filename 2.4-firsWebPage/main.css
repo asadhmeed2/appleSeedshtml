@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(123, 169, 216);
+  font-family: "Kaisei Decol", serif;
+  color: rgb(95, 93, 93);
+}
+#global {
+  border-radius: 10%;
+  margin-left: 35%;
+  width: 100mm;
+  text-align: center;
+  background-color: powderblue;
+  height: 60em;
+}
+#img {
+  width: 50mm;
+  border-radius: 30%;
+}
+#btn {
+  margin-top: 43px;
+  width: 20%;
+  float: left;
+  border-radius: 30%;
+  color: rgb(45, 195, 170);
+  background-color: rgb(80, 117, 155);
+}
+.link {
+  margin-left: 3mm;
+  text-decoration: maroon;
+  text-decoration-color: oldlace;
+}
+#myName {
+  color: rgb(55, 105, 61);
+}
+#follow {
+  float: right;
+  width: 80%;
+}
+
+.nav {
+  background: rgb(60, 60, 156);
+}
