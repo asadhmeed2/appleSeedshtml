@@ -1,0 +1,121 @@
+#container {
+  text-align: center;
+  background-color: rgb(65, 65, 150);
+}
+
+.madium {
+  padding: 10px 30px;
+}
+.large {
+  padding: 15px 30px;
+}
+.small {
+  padding: 5px 20px;
+}
+.borderNone {
+  border: none;
+}
+
+.colorWhite {
+  color: white;
+}
+.radius {
+  border-radius: 45px;
+}
+.ghost-backgraoun {
+  background-color: rgb(65, 65, 150);
+}
+#btn {
+  background-color: green;
+}
+#btn:hover {
+  background-color: rgb(19, 143, 19);
+}
+#btn2 {
+  margin-left: 3%;
+
+  background-color: rgb(128, 19, 0);
+}
+#btn2:hover {
+  background-color: red;
+}
+#btn3 {
+  margin-left: 3%;
+
+  background-color: rgb(43, 113, 136);
+}
+#btn3:hover {
+  background-color: rgb(54, 143, 173);
+}
+#btn4 {
+  background-color: rgb(221, 71, 17);
+}
+#btn4:hover {
+  background-color: rgb(235, 82, 27);
+}
+
+#btn5 {
+  margin-left: 3%;
+
+  background-color: rgb(224, 224, 12);
+}
+#btn5:hover {
+  background-color: rgb(238, 238, 13);
+}
+
+#btn6 {
+  margin-left: 3%;
+
+  background-color: gray;
+}
+#btn6:hover {
+  background-color: rgb(172, 165, 165);
+}
+
+/* borderd buttons */
+
+#btn7 {
+  border: solid 2px rgb(4, 243, 4);
+}
+#btn7:hover {
+  background-color: rgb(4, 243, 4);
+}
+#btn8 {
+  margin-left: 3%;
+
+  border: solid 2px red;
+}
+#btn8:hover {
+  background-color: red;
+}
+
+#btn9 {
+  margin-left: 3%;
+  border: solid 2px blue;
+}
+#btn9:hover {
+  background-color: blue;
+}
+
+#btn10 {
+  border: solid 2px orangered;
+}
+#btn10:hover {
+  background-color: orangered;
+}
+#btn11 {
+  margin-left: 3%;
+
+  border: solid 2px yellow;
+}
+#btn11:hover {
+  background-color: yellow;
+}
+
+#btn12 {
+  margin-left: 3%;
+  border: solid 2px gray;
+}
+#btn12:hover {
+  background-color: gray;
+}
