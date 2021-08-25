@@ -8,7 +8,6 @@
   position: absolute;
   width: 400px;
   height: 320px;
-  z-index: 1;
 }
 #tow {
   position: absolute;
@@ -16,20 +15,16 @@
   left: 200px;
   width: 380px;
   height: 300px;
-
-  z-index: 2;
 }
 #three {
   position: absolute;
   left: 700px;
   width: 100px;
   height: 700px;
-  z-index: 4;
 }
 #four {
   position: absolute;
   top: 450px;
   width: 830px;
   height: 200px;
-  z-index: 3;
 }
