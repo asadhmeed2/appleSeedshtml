@@ -1,0 +1,94 @@
+@font-face {
+  font-family: myGothamFont;
+  src: url("../font/1746-font.woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clr {
+  clear: both;
+}
+.font-size-14px {
+  font-size: 14px;
+}
+
+#header {
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+svg {
+  width: 120px;
+  height: 50px;
+  float: left;
+  margin-left: 44px;
+}
+.nav ul {
+  display: inline;
+  list-style: none;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+}
+.font-fam {
+  font-family: myGothamFont;
+}
+.font-fam-medium {
+  font-family: myGothamFont;
+}
+.nav {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  text-align: center;
+  display: block;
+  padding-top: 3px;
+}
+.nav container {
+  max-width: 1100px;
+}
+.nav ul li a {
+  color: rgb(249, 249, 249);
+  line-height: 21px;
+  font-size: 15px;
+}
+.nav ul li {
+  display: inline;
+  width: 15px;
+  height: 5px;
+  padding: 12px;
+}
+.nav ul li:hover {
+  border: initial black 1px;
+  background: rgb(120, 125, 133);
+  transition: 0.5;
+  border-radius: 33%;
+}
+#nav-2 {
+  float: right;
+  margin-right: 3%;
+}
+#nav-1 {
+  float: left;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.section-body h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 100px;
+  left: 600px;
+  font-weight: 500;
+  line-height: 48px;
+}
