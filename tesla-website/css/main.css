@@ -23,12 +23,17 @@
   height: 100vh;
   position: relative;
 }
-
 svg {
+  fill: white;
+}
+.svg-wrap {
   width: 120px;
   height: 50px;
   float: left;
-  margin-left: 44px;
+  margin-left: 47px;
+}
+.svg-wrap-container {
+  width: 30%;
 }
 .nav ul {
   display: inline;
@@ -41,20 +46,17 @@ a {
 .font-fam {
   font-family: myGothamFont;
 }
-.font-fam-medium {
-  font-family: myGothamFont;
-}
+
 .nav {
   width: 100%;
   height: 40px;
   position: fixed;
   text-align: center;
-  display: block;
-  padding-top: 3px;
+  display: inline;
+  padding-top: 19px;
+  padding-left: 1px;
 }
-.nav container {
-  max-width: 1100px;
-}
+
 .nav ul li a {
   color: rgb(249, 249, 249);
   line-height: 21px;
@@ -72,14 +74,14 @@ a {
   transition: 0.5;
   border-radius: 33%;
 }
-#nav-2 {
+
+.nav-1 {
   float: right;
-  margin-right: 3%;
+  margin-right: 2%;
 }
-#nav-1 {
-  float: left;
-  margin-left: 15%;
-  margin-right: 5%;
+
+.nav-2 {
+  margin: 0 auto;
 }
 
 .section-body h1 {
@@ -87,8 +89,53 @@ a {
   text-align: center;
   font-size: 40px;
   position: absolute;
-  top: 100px;
-  left: 600px;
+  top: 14%;
+  left: 45%;
   font-weight: 500;
   line-height: 48px;
+}
+/* Description */
+.sppedometer {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.speed {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 5px;
+  left: 5px;
+}
+
+.tcl-speedometer__needle {
+  width: 28px;
+  height: 18px;
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  transform: rotate(90deg);
+}
+.speed-time {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 45;
+  position: absolute;
+  left: 50px;
+}
+.section-description {
+  width: 30%;
+  height: 80px;
+  position: absolute;
+  top: 85%;
+  left: 35%;
+  color: white;
+}
+.speed-rang {
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
