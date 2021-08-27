@@ -12,8 +12,18 @@
 .clr {
   clear: both;
 }
+.font-size-30px {
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 45;
+}
 .font-size-14px {
   font-size: 14px;
+}
+.font-size-12px {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 #header {
@@ -72,7 +82,7 @@ a {
   border: initial black 1px;
   background: rgb(120, 125, 133);
   transition: 0.5;
-  border-radius: 33%;
+  border-radius: 45px;
 }
 
 .nav-1 {
@@ -95,10 +105,19 @@ a {
   line-height: 48px;
 }
 /* Description */
+.left-spedometer-mi {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#speed-to-60 {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
 .sppedometer {
   position: relative;
-  width: 30px;
-  height: 30px;
 }
 .speed {
   position: absolute;
@@ -117,25 +136,87 @@ a {
   transform: rotate(90deg);
 }
 .speed-time {
-  font-size: 30px;
-  line-height: 37px;
-  font-weight: 45;
   position: absolute;
   left: 50px;
 }
 .section-description {
-  width: 30%;
+  width: 70%;
   height: 80px;
   position: absolute;
-  top: 85%;
-  left: 35%;
+  top: 80%;
+  left: 28%;
   color: white;
 }
+.section-descriptin-rghit {
+  background: white;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.section-descriptin-rghit:hover {
+  cursor: pointer;
+}
+
+.section-descriptin-rghit img {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+.section-description-left {
+  width: 60%;
+
+  float: left;
+}
+
 .speed-rang {
   position: absolute;
   top: 42px;
   left: 20px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
+}
+
+.box {
+  width: 120px;
+  height: 100%;
+}
+#mi-range {
+  margin-left: 32%;
+}
+#range {
+  margin-top: 5px;
+  margin-left: -3px;
+}
+.button {
+  float: right;
+  height: 100%;
+  width: 20%;
+  text-align: center;
+}
+.button input {
+  margin-top: 15px;
+  border: solid white 2px;
+  border-radius: 50px;
+  padding: 10px 35px;
+  color: white;
+  background: Transparent;
+  cursor: pointer;
+}
+.button input:hover {
+  background: white;
+  color: black;
+}
+
+.section-descriptin-rghit {
+  float: right;
+}
+#awd {
+  position: absolute;
+  left: 61%;
+  bottom: 0px;
+}
+.awm-text-2 {
+  margin-top: 4px;
+  margin-left: 1px;
 }
