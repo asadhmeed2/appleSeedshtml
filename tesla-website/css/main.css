@@ -6,10 +6,29 @@
   font-family: Gotham-Medium;
   src: url("../font/Gotham-Font/GothamMedium.ttf");
 }
+@font-face {
+  font-family: Gotham-bold;
+  src: url("../font/Gotham-Font/GothamBold.ttf");
+}
+@font-face {
+  font-family: Gotham-book;
+  src: url("../font/Gotham-Font/GothamBook.ttf");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /*Firefox */
 }
 
 .clr {
@@ -23,17 +42,47 @@
 .font-size-14px {
   font-size: 14px;
 }
+.font-size-13px {
+  font-size: 30px;
+
+  line-height: 21px;
+}
 .font-size-12px {
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
 }
 .font-size-28px {
   font-size: 28px;
   line-height: 36px;
-  font-weight: 500;
+}
+.font-size-20px {
+  font-size: 20px;
+
+  line-height: 28px;
+}
+.font-size-9px {
+  font-size: 9px;
+
+  line-height: 9px;
+}
+.font-size-17px {
+  font-size: 17px;
+
+  line-height: 20px;
+}
+.font-fam {
+  font-family: myGothamFont;
+}
+.font-fam-mid {
+  font-family: Gotham-Medium;
+}
+.font-fam-bold {
+  font-family: Gotham-bold;
 }
 
+.font-fam-book {
+  font-family: Gotham-book;
+}
 #header {
   background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D")
     no-repeat center center/cover;
@@ -53,6 +102,14 @@ svg {
 .svg-wrap-container {
   width: 30%;
 }
+.block {
+  display: block;
+}
+.big-box {
+  width: 100%;
+  height: 300px;
+  border-radius: 45px;
+}
 .nav ul {
   display: inline;
   list-style: none;
@@ -60,12 +117,6 @@ svg {
 }
 a {
   text-decoration: none;
-}
-.font-fam {
-  font-family: myGothamFont;
-}
-.font-fam-mid {
-  font-family: Gotham-Medium;
 }
 
 .nav {
@@ -106,7 +157,7 @@ a {
 }
 /* Sidebar */
 .sidbar-container {
-  width: 15%;
+  width: 10%;
   height: 100vh;
   position: fixed;
 }
@@ -157,9 +208,6 @@ a {
   height: 100%;
 }
 
-.sppedometer {
-  position: relative;
-}
 .speed {
   position: absolute;
   width: 40px;
@@ -171,10 +219,10 @@ a {
 .tcl-speedometer__needle {
   width: 28px;
   height: 18px;
+  transform: rotate(90deg);
   position: absolute;
   top: 17px;
   left: 18px;
-  transform: rotate(90deg);
 }
 .speed-time {
   position: absolute;
@@ -183,19 +231,18 @@ a {
 .section-description {
   width: 70%;
   height: 80px;
+  color: white;
   position: absolute;
   top: 80%;
   left: 28%;
-  color: white;
 }
 .section-descriptin-rghit {
   background: white;
-  text-align: center;
-  position: relative;
+  position: fixed;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  position: relative;
+  left: 95%;
 }
 .section-descriptin-rghit:hover {
   cursor: pointer;
@@ -249,9 +296,6 @@ a {
   color: black;
 }
 
-.section-descriptin-rghit {
-  float: right;
-}
 #awd {
   position: absolute;
   left: 61%;
@@ -270,14 +314,14 @@ a {
 }
 .sec-2-left {
   float: left;
-  width: 25%;
-  height: 100%;
-  padding: 0 40px;
+  width: 30%;
+  height: 100vh;
+  padding: 0 50px;
 }
 .sec-2-right {
   float: right;
-  width: 75%;
-  height: 100%;
+  width: 70%;
+  height: 100vh;
   background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero")
     no-repeat center center/cover;
 }
@@ -287,5 +331,144 @@ a {
 .sec-2-left-h2 {
   color: #181b21;
 }
+.sec-2-head {
+  display: block;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.sec-2-safety-des {
+  color: #393c41;
+  line-height: 1.5em;
+  padding-top: 15px;
+}
 
-/* section 3 img https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop */
+.five-star-rating {
+  background: rgb(242, 242, 242);
+  margin-top: 20px;
+}
+.big-box-h2 {
+  width: 90%;
+  color: #181b21;
+  text-align: center;
+  line-height: 1.7em;
+  padding: 10px 20px;
+}
+
+/* five stars  */
+
+.stars {
+  float: right;
+}
+.sub-element {
+  float: left;
+}
+.five-star-ratin-body-elemnt {
+  width: 100%;
+  height: 20px;
+  padding: 17px 17px 20px 20px;
+}
+
+.five-star-ratin-body {
+  color: #393c41;
+}
+
+.learn-and-order {
+  width: 100%;
+  height: 40px;
+}
+
+.learn-and-order-round {
+  width: 400px;
+  height: 50px;
+  margin-left: 10px;
+}
+.btn-round {
+  border: solid black 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  color: rgb(57, 60, 65);
+  position: relative;
+  z-index: 2;
+  top: 4px;
+}
+.btn-normal {
+  border: solid black 3px;
+  width: 130px;
+  height: 40px;
+  border-radius: 50px;
+}
+.learn-and-order-round input:hover {
+  cursor: pointer;
+  background: black;
+  color: #fff;
+}
+
+/* Section 3 */
+
+.box-2 {
+  width: 300px;
+  height: 150px;
+}
+.sec-3-main {
+  width: 100%;
+  height: 60vh;
+  background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop")
+    no-repeat center center/cover;
+}
+
+.section-description-2 {
+  width: 100%;
+  height: 140px;
+  text-align: center;
+  float: right;
+}
+.left-spedometer-mi-2 {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.sec-3-body {
+  width: 100%;
+  height: 62%;
+}
+.white {
+  color: white;
+}
+#awd-2 {
+  float: right;
+}
+#speed-to-60-2 {
+  float: left;
+  line-height: 1.7em;
+}
+#mi-range-2 {
+  float: left;
+}
+/* Footer */
+.sec-3-footer {
+  width: 100%;
+  height: 41.5vh;
+}
+.sec-3-footer-content {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  padding-top: 50px;
+}
+.sec-3-footer-left {
+  width: 38%;
+  height: 100%;
+  float: left;
+}
+.learn-and-order span {
+  margin: 0px 10px;
+}
+.sec-3-footer-right {
+  color: #393c41;
+}
+.sec-3-footer-left h1 {
+  margin-bottom: 5px;
+}
