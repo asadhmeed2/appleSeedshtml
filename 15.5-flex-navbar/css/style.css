@@ -31,4 +31,9 @@
   padding: 5px;
   text-align: center;
   font-weight: 500;
+  
+}
+.nav-item:hover{
+  cursor: pointer;
+  background: chocolate;
 }
