@@ -3,9 +3,10 @@
   height: 15rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: space-around;
+  align-items: none;
   background: cornsilk;
+  
 }
 .box {
   width: 4rem;
