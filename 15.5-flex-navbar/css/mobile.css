@@ -1,0 +1,15 @@
+.container {
+    height:22% ;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-title {
+    margin:   1.4rem 0 2rem 0;
+}
