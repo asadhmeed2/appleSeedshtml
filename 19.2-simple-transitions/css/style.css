@@ -21,14 +21,11 @@
   position: absolute;
 }
 .box:hover::after {
-  animation: anima1 2s ease-in 1 forwards;
+  transform: translateX(0px);
+  background: chartreuse;
+ 
+  transition: transform 2s ease-in ,background 2s ease-in;
+  
 }
-@keyframes anima1 {
-  from {
-    transform: translateX(-300px);
-  }
-  to {
-    transform: translateX(0px);
-    background: chartreuse;
-  }
-}
+
+
