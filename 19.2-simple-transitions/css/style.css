@@ -17,15 +17,12 @@
   display: block;
   background: blue;
   transform: translateX(-300px);
-
+  transition: transform 2s ease-in, background 2s ease-in;
   position: absolute;
 }
 .box:hover::after {
   transform: translateX(0px);
   background: chartreuse;
- 
-  transition: transform 2s ease-in ,background 2s ease-in;
-  
+
+  transition: transform 2s ease-in, background 2s ease-in;
 }
-
-

@@ -160,6 +160,7 @@ a {
   width: 10%;
   height: 100vh;
   position: fixed;
+  overflow: hidden;
 }
 .sidbar {
   position: absolute;
