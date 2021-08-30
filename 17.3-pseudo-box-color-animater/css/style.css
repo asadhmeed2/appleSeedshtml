@@ -5,11 +5,13 @@
   background: blue;
   display: block;
   position: absolute;
-  
 }
 .father {
   width: 10rem;
   height: 10rem;
   background: red;
   position: relative;
+}
+.father:hover::after {
+  background: rgb(0, 255, 128);
 }
