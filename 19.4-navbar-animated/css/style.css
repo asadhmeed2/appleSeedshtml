@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6fe01;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  height: 10vh;
+}
+
+.box-1 {
+  width: 5rem;
+  height: 3rem;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box-2 {
+  width: 6rem;
+  height: 3rem;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box-3 {
+  width: 6rem;
+  height: 3rem;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box-4 {
+  width: 6rem;
+  height: 3rem;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box-1 {
+  position: relative;
+}
+.box-2{
+    position: relative;
+}
+.box-3{
+    position: relative;
+}
+
+.box-4{
+    position: relative;
+}
+
+
+
+/* box 1 */
+.box-1::before {
+  content: "";
+  position: absolute;
+  width: 5.1rem;
+  height: 3px;
+
+  transform: translateX(-77px);
+  transition: all 0.5s ease;
+  background: black;
+}
+.box-1:hover::before {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+.box-1::after {
+  content: "";
+  position: absolute;
+
+  height: 3px;
+  
+  width: 5rem;
+  background: black;
+  transform: translateX(55px);
+  transition: all 0.5s ease;
+}
+.box-1:hover::after {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+/* box-2 */
+.box-2::before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 3px;
+  transform: translateX(-88px);
+  transition: all 0.5s ease;
+  background: black;
+}
+.box-2:hover::before {
+  transform: translateX(-3%);
+  transition: all 0.5s ease;
+}
+.box-2::after {
+  content: "";
+  position: absolute;
+
+  height: 3px;
+  
+  width: 6rem;
+  background: black;
+  transform: translateX(70px);
+  transition: all 0.5s ease;
+}
+.box-2:hover::after {
+  transform: translateX(-3px);
+  transition: all 0.5s ease;
+}
+/* box 3 */
+.box-3::before {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 3px;
+
+  transform: translateX(-102px);
+  transition: all 0.5s ease;
+  background: black;
+}
+.box-3:hover::before {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+.box-3::after {
+  content: "";
+  position: absolute;
+
+  height: 3px;
+  
+  width: 7rem;
+  background: black;
+  transform: translateX(70px);
+  transition: all 0.5s ease;
+}
+.box-3:hover::after {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+/* box-4 */
+.box-4::before {
+  content: "";
+  position: absolute;
+  width: 5.5rem;
+  height: 3px;
+  transform: translateX(-90px);
+  transition: all 0.5s ease;
+  background: black;
+}
+.box-4:hover::before {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+.box-4::after {
+  content: "";
+  position: absolute;
+
+  height: 3px;
+  
+  width: 5.5rem;
+  background: black;
+  transform: translateX(68px);
+  transition: all 0.5s ease;
+}
+.box-4:hover::after {
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
