@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.box {
+  border-radius: 10px;
+
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "first first first first "
+    "second third third fourth"
+    "fivth fivth fivth fivth";
+  grid-gap: 1rem;
+  font-size: 20px;
+  line-height: 1.7rem;
+}
+.first {
+  grid-area: first;
+  background: rgb(189, 49, 49);
+}
+.second {
+  grid-area: second;
+  background: green;
+}
+.thired {
+  grid-area: third;
+  background: black;
+}
+.fourth {
+  grid-area: fourth;
+  background: orange;
+}
+.fivth {
+  grid-area: fivth;
+  background: paleturquoise;
+}
+
+@media (max-width: 576px) {
+  .container {
+    grid-template-areas:
+      "first "
+      "second"
+      "third"
+      "fourth "
+      "fivth";
+  }
+}
+
+@media (min-width: 577px) and  ( max-width:992px) {
+  .container {
+    grid-template-areas:
+      "first first first first "
+      "second third third third "
+      "fourth fourth fourth fourth "
+      "fivth fivth fivth fivth";
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    grid-template-areas:
+      "first first first first "
+      "second third third fourth"
+      "fivth fivth fivth fivth";
+  }
+}
