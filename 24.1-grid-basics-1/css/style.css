@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  border-radius: 10px;
+  
+  height: 4rem;
+}
+
+.container {
+    width: 100%;
+  display: grid;
+  grid-template-areas:
+    "first first second second"
+    "third fourth fourth fourth"
+    "fivth fivth fivth fivth";
+  grid-gap: 1rem;
+}
+.first {
+  grid-area: first;
+  background: rgb(189, 49, 49);
+}
+.second {
+  grid-area: second;
+  background: green;
+}
+.thired {
+  grid-area: third;
+  background: black;
+}
+.fourth {
+  grid-area: fourth;
+  background: orange;
+}
+.fivth {
+  grid-area: fivth;
+  background: paleturquoise;
+}
