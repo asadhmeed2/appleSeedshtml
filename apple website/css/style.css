@@ -1,0 +1,274 @@
+:root {
+  --primary-color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar {
+  width: 100%;
+ overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color);
+  opacity: 0.8;
+  position: fixed;
+  color: white;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+}
+.navbar .navbar-content ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+}
+.navbar .navbar-content ul li {
+  padding: 10px 10px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.navbar .navbar-content ul li a {
+  color: white;
+}
+.navbar .navbar-content ul li .logo img {
+  position: absolute;
+top:-2px;  
+}
+.navbar .navbar-content ul li .bag-icon img {
+    width: 18px;
+  position: absolute;
+top:-2px;  
+}
+.navbar .navbar-content ul li .serch-icon img {
+   
+    width: 18px;
+  position: absolute;
+top:-2px;  
+}
+/* wellcom massge */
+.wellcom {
+  margin-top: 3rem;
+  padding: 0.8rem 0;
+  text-align: center;
+}
+.iphone {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.iphone-12 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url("https://www.apple.com/v/home/ab/images/heroes/iphone-12/iphone_12_updated__jepm2xpxncuy_largetall_2x.jpg")
+    no-repeat center center/cover;
+}
+.iphone-12 .link-decor {
+  display: inline-block;
+  position: relative;
+  z-index: 12;
+  cursor: pointer;
+}
+.link-decor:hover {
+  text-decoration: underline;
+}
+.learn1 {
+  position: absolute;
+  padding: 30px;
+
+  top: 20%;
+  left: 42%;
+}
+.buy1 {
+  position: absolute;
+  padding: 30px;
+
+  top: 20%;
+  left: 50%;
+}
+
+/* iPhone 12 pro */
+.iphone-12-pro-container {
+  position: relative;
+}
+.iphone-12-pro {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  background: url("https://www.apple.com/v/home/ab/images/heroes/iphone-12-pro/iphone_12_pro_us__e5oyysg4k0ya_largetall_2x.jpg")
+    no-repeat center center/cover;
+}
+.iphone-12-pro .link-decor {
+  position: relative;
+  z-index: 12;
+  cursor: pointer;
+  padding: 5px;
+}
+.iphone-12-pro .link-decor:hover {
+  text-decoration: underline;
+}
+.learn2 {
+  position: absolute;
+  padding: 20px;
+
+  top: 20%;
+  left: 42%;
+}
+.buy2 {
+  position: absolute;
+  padding: 20px;
+
+  top: 20%;
+  left: 50%;
+}
+
+/* TV */
+.tv-container {
+  width: 100%;
+  height: 93vh;
+  background: url("https://www.apple.com/v/home/ab/images/heroes/tv-plus-see-hero/hero_startframe__dbi4flqyio2u_large_2x.jpg")
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.tv {
+  width: 100%;
+  height: 93vh;
+
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.apple-stor-logo {
+  width: 90px;
+}
+.new-season-logo {
+  width: 200px;
+}
+.content-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  z-index: -11;
+}
+
+.stream-link {
+  margin: 20px;
+  position: relative;
+  z-index: 100;
+}
+/* More Prodact */
+.more-prodact {
+  display: grid;
+  grid-template-areas:
+    "first second"
+    "third fourth"
+    "fivth sixth";
+}
+.box-link,
+.box-link1,
+.box-link2,
+.box-link4,
+.box-link5,
+.box-link6,
+.box-content1,
+.box-content2,
+.box-content3,
+.box-content4,
+.box-content5,
+.box-content6 {
+  width: 50vw;
+  height: 70vh;
+}
+.box-link {
+  position: absolute;
+  z-index: 100;
+}
+.box {
+  margin: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.box1 {
+  grid-area: first;
+}
+.box-content1 {
+  background: url("https://www.apple.com/v/home/ab/images/promos/ipad-pro/promo_ipad_pro_non_avail__c6f02v7gnwgi_large_2x.jpg")
+    no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+.box2 {
+  grid-area: second;
+}
+.box-content2 {
+  background: url("https://www.apple.com/v/home/ab/images/promos/watch-series-6/promo_watch_series_6_lte__f8lrasjnry2y_large_2x.jpg")
+    no-repeat center center/cover;
+}
+.box3 {
+  grid-area: third;
+}
+
+.box-content3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.box-content3 img {
+  width: 120%;
+}
+
+.box4 {
+  grid-area: fourth;
+}
+.box-content4 {
+  background: url("https://www.apple.com/v/home/ab/images/promos/back-to-school-2021/promo_bts__bg3cb4kaoqoi_large_2x.jpg")
+    no-repeat center center/cover;
+}
+
+.box5 {
+  grid-area: fivth;
+}
+.box-content5 {
+  background: url("https://www.apple.com/v/home/ab/images/promos/app-store-marvel/tile_appstore_image__bo7esb6hmq02_large_2x.jpg")
+    no-repeat center center/cover;
+}
+.box6 {
+  grid-area: sixth;
+}
+.box-content6 {
+  background: url("https://www.apple.com/v/home/ab/images/promos/reji/tile_racial_equity__pi2fnk64hx6y_large_2x.jpg")
+    no-repeat center center/cover;
+}
